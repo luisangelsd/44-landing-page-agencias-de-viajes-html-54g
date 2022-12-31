@@ -1,0 +1,660 @@
+/*Importar Fuentes*/
+@font-face {
+    font-family: public-sans-regular;
+    src: url(fonts/public-sans-regular.ttf);
+}
+
+
+@font-face {
+    font-family: ABeeZee-Regular;
+    src: url(fonts/ABeeZee-Regular.ttf);
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: public-sans-regular;
+}
+
+p,
+input,
+textarea,
+button {
+    font-family: ABeeZee-Regular;
+}
+
+
+
+
+
+/*Pantallas muy pequeñas (móviles en portrait)*/
+@media (max-width: 560px) {
+
+    /*Tamaños tipografias*/
+    h1 {
+        font-size: 2.2em;
+        line-height: 1em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+        line-height: 1em;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.5em;
+    }
+
+
+    /*Cuerpo del documento*/
+
+    body {
+        margin: 0%;
+        padding: 0% 0% 0% 0%;
+    }
+
+
+    /*Contenedor 1 - Logotipo*/
+    #contenedor1-logo {
+        background-color: #fff;
+        text-align: center;
+        padding: 3%;
+    }
+
+
+    /*Contenedor 2 - Encabezado*/
+    #contenedor2-header {
+        background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.671)), url(img/montanas.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 6% 10%;
+        border-radius: 10px;
+        text-align: center;
+        color: #fff;
+    }
+
+    #contenedor2-header>a>button {
+        background-color: #E9A901;
+        padding: 12px 22px;
+        border-radius: 4px;
+        border-style: none;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    /*Contenedor 3 - Problematica*/
+    #contenedor3-problematica {
+        display: grid;
+        grid-template-columns: 100%;
+        padding: 5% 8%;
+    }
+
+    #c3-hijo1 {
+        text-align: center;
+    }
+
+    #c3-hijo1>img {
+        display: flex;
+        margin: auto;
+    }
+
+    #c3-hijo2 {
+        display: none;
+    }
+
+    /*Contenedor 4 - Agitacion*/
+    #contenedor4-agitacion {
+        padding: 5% 8%;
+        display: grid;
+        grid-template-columns: 100%;
+
+    }
+
+    #c4-hijo1 {
+        display: none;
+    }
+
+    #c4-hijo2 {
+        text-align: center;
+    }
+
+
+    #c4-hijo2>img {
+        display: block;
+        margin: auto;
+    }
+
+
+
+
+    /*Contenedor 5 - Solucion*/
+    #contenedor5-solucion {
+        display: grid;
+        grid-template-columns: 100%;
+        margin: 0% 0% 4% 0%;
+        padding: 5% 8%;
+    }
+
+    #c5-hijo1 {
+        text-align: center;
+    }
+
+    #c5-hijo1>img {
+        display: block;
+        margin: auto;
+    }
+
+    #c5-hijo2 {
+        display: none;
+    }
+
+    /*Contenedor 6 - Call to action*/
+    #contenedor6-call-to-action {
+        background-color: #E9A901;
+        padding: 4% 5% 4% 5%;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    #c6-hijo1 {
+        text-align: center;
+        font-size: 1.4em;
+    }
+
+    #c6-hijo1>img {
+        display: block;
+        margin: auto;
+    }
+
+
+    #c6-hijo2 {
+        border-radius: 5px;
+        border-style: groove;
+        border-color: #0f0f0f;
+        border-width: 1px;
+        padding: 5% 2%;
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+        
+        flex-direction: column;
+
+    }
+
+    .form-campos {
+        margin: 5px 1%;
+        padding: 10px;
+
+        border-radius: 5px;
+        border-style: groove;
+        border-width: 1px;
+        border-color: #e0e0e0;
+
+        width: 90%;
+        height: 18px;
+    }
+
+    #form-mensaje {
+        margin: 5px 1%;
+        padding: 10px;
+
+        border-radius: 5px;
+        border-style: groove;
+        border-width: 1px;
+        border-color: #e0e0e0;
+
+        width: 90%;
+        height: 150px;
+
+    }
+
+
+    #form-btn {
+        background-color: #000;
+        color: #fff;
+        width: 95%;
+        padding: 20px 10px;
+
+        border-radius: 4px;
+        border-style: none;
+    }
+
+
+
+    /*Contenedor 7 - Footer */
+    #contenedor7-copywriter {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    #c7-hijo1 {
+        text-align: center;
+    }
+}
+
+
+/*Pantallas medianas (tablets)*/
+@media (min-width: 560px) {
+
+    /*Tamaños tipografias*/
+    h1 {
+        font-size: 3em;
+        line-height: 1em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+        line-height: 1em;
+    }
+
+    p {
+        font-size: 19px;
+        line-height: 1.5em;
+    }
+
+
+    /*Cuerpo del documento*/
+
+    body {
+        margin: 0%;
+        padding: 0% 5% 0% 5%;
+    }
+
+
+    /*Contenedor 1 - Logotipo*/
+    #contenedor1-logo {
+        background-color: #fff;
+        text-align: center;
+        padding: 1%;
+    }
+
+
+    /*Contenedor 2 - Encabezado*/
+    #contenedor2-header {
+        background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.671)), url(img/montanas.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 6% 25%;
+        border-radius: 10px;
+        text-align: center;
+        color: #fff;
+    }
+
+    #contenedor2-header>a>button {
+        background-color: #E9A901;
+        padding: 12px 22px;
+        border-radius: 4px;
+        border-style: none;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    /*Contenedor 3 - Problematica*/
+    #contenedor3-problematica {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        padding: 3% 8%;
+    }
+
+    #c3-hijo1>img {
+        display: flex;
+        margin: auto;
+    }
+
+    #c3-hijo2 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    /*Contenedor 4 - Agitacion*/
+    #contenedor4-agitacion {
+        padding: 3% 8%;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-column-gap: 10%;
+
+    }
+
+    #c4-hijo1 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    #c4-hijo1>img {
+        transform: scaleX(-1);
+    }
+
+    #c4-hijo2>img {
+        display: block;
+        margin: auto;
+    }
+
+
+    /*Contenedor 5 - Solucion*/
+    #contenedor5-solucion {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        margin: 0% 0% 4% 0%;
+        padding: 3% 8%;
+    }
+
+
+    #c5-hijo1>img {
+        display: block;
+        margin: auto;
+    }
+
+    #c5-hijo2 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    /*Contenedor 6 - Call to action*/
+    #contenedor6-call-to-action {
+        background-color: #E9A901;
+        padding: 4% 5% 4% 5%;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: 40% 50%;
+        grid-column-gap: 10%;
+    }
+
+    #c6-hijo1 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    #c6-hijo1>img {
+        display: block;
+        margin: auto;
+    }
+
+
+    #c6-hijo2 {
+        border-radius: 5px;
+        border-style: groove;
+        border-color: #0f0f0f;
+        border-width: 1px;
+        padding: 5% 2%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    .form-campos {
+        margin: 5px 1%;
+        padding: 10px;
+        border-radius: 5px;
+        border-style: groove;
+        border-width: 1px;
+        border-color: #e0e0e0;
+
+        width: 90%;
+        height: 18px;
+    }
+
+    #form-mensaje {
+        margin: 5px 1%;
+        padding: 10px;
+        border-radius: 5px;
+        border-style: groove;
+        border-width: 1px;
+        border-color: #e0e0e0;
+        width: 90%;
+        height: 150px;
+    }
+
+
+    #form-btn {
+        background-color: #000;
+        color: #fff;
+        width: 95%;
+        padding: 20px 10px;
+        border-radius: 4px;
+        border-style: none;
+    }
+
+    #form-mensaje-respuesta{
+        font-size: 16px;
+    }
+
+
+
+    /*Contenedor 7 - Footer */
+    #contenedor7-copywriter {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    #c7-hijo1 {
+        text-align: center;
+    }
+}
+
+
+/*Pantallas grandes (Desktop)*/
+@media screen and (min-width: 1200px) {
+
+    /*Tamaños tipografias*/
+    h1 {
+        font-size: 3em;
+        line-height: 1em;
+    }
+
+    h2 {
+        font-size: 2.1em;
+        line-height: 1em;
+    }
+
+    p {
+        font-size: 19px;
+        line-height: 1.5em;
+    }
+
+
+    /*Cuerpo del documento*/
+
+    body {
+        margin: 0%;
+        padding: 0% 12% 0% 12%;
+        background: #fff;
+    }
+
+
+    /*Contenedor 1 - Logotipo*/
+    #contenedor1-logo {
+        background-color: #fff;
+        text-align: center;
+        padding: 1%;
+    }
+
+
+    /*Contenedor 2 - Encabezado*/
+    #contenedor2-header {
+        background: linear-gradient(rgba(0, 0, 0, 0.514), rgba(0, 0, 0, 0.671)), url(img/montanas.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 6% 25%;
+        border-radius: 10px;
+        text-align: center;
+        color: #fff;
+    }
+
+    #contenedor2-header>a>button {
+        background-color: #E9A901;
+        padding: 12px 22px;
+        border-radius: 4px;
+        border-style: none;
+        color: #fff;
+        font-size: 18px;
+    }
+
+    /*Contenedor 3 - Problematica*/
+    #contenedor3-problematica {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        padding: 3% 8%;
+    }
+
+    #c3-hijo1>img {
+        display: flex;
+        margin: auto;
+    }
+
+    #c3-hijo2 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    /*Contenedor 4 - Agitacion*/
+    #contenedor4-agitacion {
+        padding: 3% 8%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-column-gap: 10%;
+
+    }
+
+    #c4-hijo1 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    #c4-hijo1>img {
+        transform: scaleX(-1);
+    }
+
+    #c4-hijo2>img {
+        display: block;
+        margin: auto;
+    }
+
+
+    /*Contenedor 5 - Solucion*/
+    #contenedor5-solucion {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        margin: 0% 0% 4% 0%;
+        padding: 3% 8%;
+
+    }
+
+    #c5-hijo1>img {
+        display: block;
+        margin: auto;
+    }
+
+    #c5-hijo2 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    /*Contenedor 6 - Call to action*/
+    #contenedor6-call-to-action {
+        background-color: #E9A901;
+        padding: 4% 15% 4% 15%;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-column-gap: 10%;
+
+    }
+
+    #c6-hijo1 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    #c6-hijo1>img {
+        display: block;
+        margin: auto;
+    }
+
+
+    #c6-hijo2 {
+        border-radius: 5px;
+        border-style: groove;
+        border-color: #0f0f0f;
+        border-width: 1px;
+        padding: 5% 2%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+
+
+    .form-campos {
+        margin: 5px 1%;
+        padding: 10px;
+
+        border-radius: 5px;
+        border-style: groove;
+        border-width: 1px;
+        border-color: #e0e0e0;
+
+        width: 90%;
+        height: 18px;
+    }
+
+    
+    #form-mensaje {
+        margin: 5px 1%;
+        padding: 10px;
+        border-radius: 5px;
+        border-style: groove;
+        border-width: 1px;
+        border-color: #e0e0e0;
+        width: 90%;
+        height: 150px;
+    }
+
+
+
+
+    #form-btn {
+        background-color: #000;
+        color: #fff;
+        width: 95%;
+        padding: 20px 10px;
+
+        border-radius: 4px;
+        border-style: none;
+    }
+
+    #form-mensaje-respuesta {
+        font-size: 16px;
+    }
+
+
+
+    /*Contenedor 7 - Footer */
+    #contenedor7-copywriter {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    #c7-hijo1 {
+        text-align: center;
+    }
+
+
+}

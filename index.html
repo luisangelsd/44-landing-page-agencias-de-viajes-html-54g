@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+    <header> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Turismo y Viajes</title>
+        <link rel="styleSheet" href="styles.css">
+        <link rel="icon" href="img/mapa.png" />
+    </header>
+
+    <body>
+        
+        <div id="contenedor1-logo">
+            <img src="img/logo.png">
+        </div>
+
+
+        <div id="contenedor2-header">
+            <img src="img/mapa.png">
+            <h1>Añade aquí un título contundente y creativo.</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s</p>
+            <a href="#form1"><button>Call to Action</button></a> 
+        </div>
+
+        <div id="contenedor3-problematica">
+            <div id="c3-hijo1">
+                <img src="img/lentes.png">
+                <h2>Problemática: Añade aquí un titulo impactante</h2>
+                <p>En este espacio redacta un texto con el objetivo de hacer notar y sentir a nuestro visitante que tiene un problema real, todo esto con la intención de situar su mente y más adelante poder ayudarlo.</p>
+            </div>
+            <div id="c3-hijo2">
+                <img src="img/flecha-abajo.png">
+            </div>
+        </div>
+
+        <div id="contenedor4-agitacion">
+            <div id="c4-hijo1">
+                <img src="img/flecha-abajo.png">
+            </div>
+            <div id="c4-hijo2">
+                <img src="img/maleta.png">
+                <h2>Agitación: Añade un título impactante aquí</h2>
+                <p>Una vez que nuestro visitante esta consiente de su problema, es momento de hacerlo más grande y con ello aumentar la necesidad de resolverlo cuando antes.</p>
+                <p><b>Aquí también puedes listar las desventajas o puntos de dolor más relevantes.</b></p>
+            </div>
+        </div>
+
+        <div id="contenedor5-solucion">
+            <div id="c5-hijo1">
+                <img src="img/camara.png">
+                <h2>Solución: Añade un título impactante aquí</h2>
+                <p>Aquí es donde le mostraremos a nuestro visitante cual es la forma más efectiva para resolver su situación actual.   <b>Aquí también puedes listar los beneficios más relevantes o todos los problemas que resuelves.</b></p>
+            </div>
+            <div id="c5-hijo2">
+                <img src="img/flecha-abajo.png">
+            </div>
+        </div>
+        
+        <div id="contenedor6-call-to-action">
+            <div id="c6-hijo1">
+                <img src="img/avion.png">
+                <h2>Acción: Aquí puedes colocar un título impactante</h2>
+                <p>Aquí redacta un texto en donde invites a tu visitante de forma directa a rellenar tu formulario. <b>No olvides ser lo más creativo posible.</b></p>
+            </div>
+            <div id="c6-hijo2">
+                <form id="form1">
+                    <p>¡Añade aquí un título impactante!</p>
+                    <input type="text" id="form-nombre" class="form-campos" placeholder="Nombre:" required autocomplete="cc-name">
+                    <input type="email" id="form-email"  class="form-campos" placeholder="E-Mail:" required autocomplete="email">
+                    <input type="tel" id="form-telefono" class="form-campos"  placeholder="Teléfono o WhatsApp:" required autocomplete="tel">
+                    <textarea id="form-mensaje" placeholder="Escribe aquí tu mensaje:" required></textarea>
+                    <input type="button" onclick="enviarFormulario()" id="form-btn" value="CALL TO ACTION"> 
+                </form>
+                <p id="form-mensaje-respuesta"></p>
+            </div>
+        </div>
+
+        <div id="contenedor7-copywriter">
+            <div id="c7-hijo1">
+                <p>Copywriter ©2030</p>
+           </div>
+        </div>
+
+    </body>
+    <script src="controlador.js"></script>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</html>
