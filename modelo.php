@@ -13,7 +13,7 @@
   ."\n Teléfono: ".$telefono
   ."\n Mensaje:".$mensaje;
 
-  $para="ejemplo@ejemplo.com";               //Añade el correo en el cual recibiras la información
+  $para="pruebas@sandovalguicho.com";               //Añade el correo en el cual recibiras la información
   $subject="¡Felicidades, tienes un nuevo mensaje!";    // Añade un mensaje como encabezado
   mail($para, $subject, $mensaje_completo);             // Aquí se envia el formulario 
 
