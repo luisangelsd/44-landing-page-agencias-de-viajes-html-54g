@@ -65,15 +65,14 @@
                 <p>Aquí redacta un texto en donde invites a tu visitante de forma directa a rellenar tu formulario. <b>No olvides ser lo más creativo posible.</b></p>
             </div>
             <div id="c6-hijo2">
-                <form id="form1">
+                <form id="form1" method="post" action="modelo.php">
                     <p>¡Añade aquí un título impactante!</p>
-                    <input type="text" id="form-nombre" class="form-campos" placeholder="Nombre:" required autocomplete="cc-name">
-                    <input type="email" id="form-email"  class="form-campos" placeholder="E-Mail:" required autocomplete="email">
-                    <input type="tel" id="form-telefono" class="form-campos"  placeholder="Teléfono o WhatsApp:" required autocomplete="tel">
-                    <textarea id="form-mensaje" placeholder="Escribe aquí tu mensaje:" required></textarea>
-                    <input type="button" onclick="enviarFormulario()" id="form-btn" value="CALL TO ACTION"> 
+                    <input type="text" id="form_nombre" name="form_nombre" class="form-campos" placeholder="Nombre:" required autocomplete="cc-name">
+                    <input type="email" id="form_correo"  name="form_correo" class="form-campos" placeholder="E-Mail:" required autocomplete="email">
+                    <input type="number" id="form_telefono" name="form_telefono" class="form-campos"  placeholder="Teléfono o WhatsApp:" required autocomplete="tel">
+                    <textarea id="form_mensaje" name="form_mensaje" placeholder="Escribe aquí tu mensaje:" required></textarea>
+                    <input type="submit"  id="form-btn" value="CALL TO ACTION"> 
                 </form>
-                <p id="form-mensaje-respuesta"></p>
             </div>
         </div>
 
@@ -84,6 +83,4 @@
         </div>
 
     </body>
-    <script src="controlador.js"></script>
-   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 </html>

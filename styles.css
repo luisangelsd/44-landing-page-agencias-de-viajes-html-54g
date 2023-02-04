@@ -202,7 +202,7 @@ button {
         height: 18px;
     }
 
-    #form-mensaje {
+    #form_mensaje {
         margin: 5px 1%;
         padding: 10px;
 
@@ -406,7 +406,7 @@ button {
         height: 18px;
     }
 
-    #form-mensaje {
+    #form_mensaje {
         margin: 5px 1%;
         padding: 10px;
         border-radius: 5px;
@@ -616,7 +616,7 @@ button {
     }
 
     
-    #form-mensaje {
+    #form_mensaje {
         margin: 5px 1%;
         padding: 10px;
         border-radius: 5px;
